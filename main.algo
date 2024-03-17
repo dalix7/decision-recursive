@@ -3,12 +3,13 @@
 FUNCTION isLeapYear(year):
 
 
-IF(year % 4 = 0 && year % 100 != 0 || year % 400 === 0) THEN 
-
-        RETURN true;
-    
- ELSE 
-        RETURN false;
+        IF(year % 4 = 0 && year % 100 != 0 || year % 400 === 0) THEN 
+        
+                RETURN true;
+            
+         ELSE 
+                RETURN false;
+END
 
 
 

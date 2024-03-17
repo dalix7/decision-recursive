@@ -17,18 +17,18 @@ END
 /* function Ticket Pricing */
 
 FUNCTION TicketPricing(age): STRING
-    VAR
-        res : STRING
-
-SWITCH (age) DO
-    case (age <= 12) : return res = "$10" ;
-    break;
-    case (age >=13 && age<=17) : return res = "$15";
-     break;
-   default : return res = "$20";
-    
-END_SWITCH
-END FUNCTION
+            VAR
+                res : STRING
+        
+        SWITCH (age) DO
+            case (age <= 12) : return res = "$10" ;
+            break;
+            case (age >=13 && age<=17) : return res = "$15";
+             break;
+           default : return res = "$20";
+            
+        END_SWITCH
+END 
 
 
 
@@ -43,14 +43,14 @@ END FUNCTION
 /* Fibonacci Sequence function */
 
 FUNCTION fibonacci(n): INTEGER
-VAR 
-    res : INTEGER
-BEGIN
-    IF (n <= 1) THEN
-        RETURN res = n ;
-    ELSE
-        RETURN res = fibonacci(n - 1) + fibonacci(n - 2);
-    END_IF
+        VAR 
+            res : INTEGER
+        BEGIN
+            IF (n <= 1) THEN
+                RETURN res = n ;
+            ELSE
+                RETURN res = fibonacci(n - 1) + fibonacci(n - 2);
+            END_IF
 END
 
 

@@ -1,8 +1,9 @@
 /* function Leap Year Checker */
 
-FUNCTION isLeapYear(year):
+FUNCTION isLeapYear(year): BOOLEAN
 
 
+BEGIN
         IF(year % 4 = 0 && year % 100 != 0 || year % 400 === 0) THEN 
         
                 RETURN true;
@@ -19,7 +20,7 @@ END
 FUNCTION TicketPricing(age): STRING
             VAR
                 res : STRING
-        
+BEGIN       
         SWITCH (age) DO
             case (age <= 12) : return res = "$10" ;
             break;
@@ -45,7 +46,7 @@ END
 FUNCTION fibonacci(n): INTEGER
         VAR 
             res : INTEGER
-        BEGIN
+BEGIN
             IF (n <= 1) THEN
                 RETURN res = n ;
             ELSE
